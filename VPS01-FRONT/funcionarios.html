@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários - IPlast</title>
+    <link rel="stylesheet" href="funcionarios.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header>
+        <h1>IPlast</h1>
+        <div class="container">
+            <a href="clientes.html">Clientes</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="home.html">Home</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="cadastro">
+            <button id="abrirModal">Novo Funcionário</button>
+        </div>
+        <div id="meuModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um Funcionário</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="text" placeholder="CPF" name="cpf">
+                <input type="email" placeholder="E-mail" name="email">
+                <input type="text" placeholder="Telefone" name="telefone">
+                <input type="text" placeholder="Logradouro" name="logradouro">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </div>
+        <div class="apresentarfuncionarios">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Logradouro</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>José Santos</td>
+                    <td>111.222.333-44</td>
+                    <td>jose@email.com</td>
+                    <td>(11) 91234-5678</td>
+                    <td>Rua Exemplo, 123</td>
+                    <td>
+                        <a href="editar.html" class="btn-edit">Editar</a>
+                        <a href="excluir.html" class="btn-delete">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ana Pereira</td>
+                    <td>555.666.777-88</td>
+                    <td>ana@email.com</td>
+                    <td>(21) 97654-3210</td>
+                    <td>Av. Principal, 456</td>
+                    <td>
+                        <a href="editar.html" class="btn-edit">Editar</a>
+                        <a href="excluir.html" class="btn-delete">Excluir</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Dud4Silvaa</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

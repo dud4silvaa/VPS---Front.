@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - IPlast</title>
+    <link rel="stylesheet" href="clientes.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>IPlast</h1>
+        <div class="container">
+            <a href="clientes.html">Clientes</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="home.html">Home</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="cadastro">
+            <button id="abrirModal">Novo Cliente</button>
+        </div>
+        <div id="meuModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um Cliente</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="text" placeholder="CPF" name="cpf">
+                <input type="email" placeholder="E-mail" name="email">
+                <input type="text" placeholder="Logradouro" name="logradouro">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </div>
+        <div class="apresentarclientes">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>E-mail</th>
+                    <th>Logradouro</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>Yuri Alberto</td>
+                    <td>123.456.789-00</td>
+                    <td>YuriAlberto@email.com</td>
+                    <td>Rua pai do Palmeiras, 123</td>
+                    <td>
+                        <a href="editar.html" class="btn-edit">Editar</a>
+                        <a href="excluir.html" class="btn-delete">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hugo Souza</td>
+                    <td>987.654.321-00</td>
+                    <td>HugoSouza@email.com</td>
+                    <td>Av. Neo Quuimica, 456</td>
+                    <td>
+                        <a href="editar.html" class="btn-edit">Editar</a>
+                        <a href="excluir.html" class="btn-delete">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Memphis Depay</td>
+                    <td>976.123.741-00</td>
+                    <td>MemphisDepay@email.com</td>
+                    <td>Av. Itaquera, 456</td>
+                    <td>
+                        <a href="editar.html" class="btn-edit">Editar</a>
+                        <a href="excluir.html" class="btn-delete">Excluir</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Dud4Silvaa</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - IPlast</title>
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header>
+        <h1>IPlast</h1>
+        <div class="container">
+            <a href="clientes.html">Clientes</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="home.html">Home</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="cadastro">
+            <button id="abrirModal">Novo Produto</button>
+        </div>
+        <div id="meuModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um Produto</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="text" placeholder="Descrição" name="nascimento">
+                <input type="number" placeholder="Valor Custo" name="valor custo">
+                <input type="number" placeholder="Valor Venda" name="valor venda">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </div>
+        <div class="apresentarprodutos">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Valor Custo</th>
+                    <th>Valor Venda</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Arroz branco</td>
+                    <td>R$2,00</td>
+                    <td>R$10,00</td>
+                    <td>
+                        <a href="editar.html" class="btn-edit">Editar</a>
+                        <a href="excluir.html" class="btn-delete">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Feijão</td>
+                    <td>Feijão preto</td>
+                    <td>R$10,00</td>
+                    <td>R$25,00</td>
+                    <td>
+                        <a href="editar.html" class="btn-edit">Editar</a>
+                        <a href="excluir.html" class="btn-delete">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Carne</td>
+                    <td>Picanha</td>
+                    <td>R$88,00</td>
+                    <td>R$128,00</td>
+                    <td>
+                        <a href="editar.html" class="btn-edit">Editar</a>
+                        <a href="excluir.html" class="btn-delete">Excluir</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Dud4Silvaa</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

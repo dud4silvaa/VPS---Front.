@@ -1,0 +1,28 @@
+header {
+    background-color: rgb(240, 42, 164);
+    color: #fff;
+    padding: 15px 5%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header .container {
+    display: flex;
+    gap: 15px;
+}
+
+header .container a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .container a:hover {
+    text-decoration: underline;
+}

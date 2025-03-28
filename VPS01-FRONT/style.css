@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.header .container {
+    display: flex;
+    padding: 15px;
+}
+
+
+.header a {
+    text-decoration: none; 
+}
+
+
+.header button {
+    background-color: rgb(240, 42, 164);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.header button:hover {
+    background-color: rgb(158, 17, 104);
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px; 
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+
+
+footer p {
+    margin: 0;
+}
